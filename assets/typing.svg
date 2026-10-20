@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="36" viewBox="0 0 620 36" role="img" aria-labelledby="title">
+  <title id="title">Building with agents. Learning backend systems.</title>
+  <style>
+    @keyframes type { 0%, 5% { width: 0; } 70%, 100% { width: 560px; } }
+    .reveal { animation: type 10s steps(46, end) infinite; }
+    @media (prefers-reduced-motion: reduce) { .reveal { animation: none; } }
+  </style>
+  <defs>
+    <clipPath id="typing"><rect class="reveal" x="30" y="0" width="560" height="36"/></clipPath>
+  </defs>
+  <text x="30" y="24" fill="#8b83bd" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" textLength="550" lengthAdjust="spacingAndGlyphs" clip-path="url(#typing)">Building with agents. Learning backend systems.</text>
+</svg>

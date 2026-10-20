@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="190" viewBox="0 0 1000 190" role="img" aria-labelledby="title desc">
+  <title id="title">lr / radianceded</title>
+  <desc id="desc">AI Agent Infrastructure and Backend Development. Soochow University.</desc>
+  <rect width="1000" height="190" rx="16" fill="#111c30"/>
+  <path d="M28 25v140" stroke="#a99cdd" stroke-width="3"/>
+  <text x="58" y="51" fill="#a6b6cf" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="3">SOOCHOW UNIVERSITY / SOFTWARE ENGINEERING</text>
+  <text x="56" y="105" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="-1">lr / radianceded</text>
+  <text x="58" y="144" fill="#b5c4da" font-family="Segoe UI, Arial, sans-serif" font-size="18">AI Agent Infrastructure &amp; Backend Development</text>
+  <g fill="none" stroke="#52637e" stroke-width="1.4">
+    <path d="M801 57h48l40 38-40 38h-48l-40-38z"/>
+    <path d="M849 57v76M761 95h128M801 57v76"/>
+    <path d="M889 95h54" stroke-dasharray="3 5"/>
+  </g>
+  <circle cx="801" cy="57" r="4" fill="#a99cdd"/>
+  <circle cx="849" cy="133" r="4" fill="#a99cdd"/>
+  <circle cx="943" cy="95" r="4" fill="#b5c4da"/>
+</svg>
