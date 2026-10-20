@@ -1,16 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="190" viewBox="0 0 1000 190" role="img" aria-labelledby="title desc">
-  <title id="title">lr / radianceded</title>
-  <desc id="desc">AI Agent Infrastructure and Backend Development. Soochow University. A raven silhouette perched on a branch.</desc>
-  <rect width="1000" height="190" rx="16" fill="#111c30"/>
-  <path d="M28 25v140" stroke="#a99cdd" stroke-width="3"/>
-  <text x="58" y="51" fill="#a6b6cf" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="3">SOOCHOW UNIVERSITY / SOFTWARE ENGINEERING</text>
-  <text x="56" y="105" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="-1">lr / radianceded</text>
-  <text x="58" y="144" fill="#b5c4da" font-family="Segoe UI, Arial, sans-serif" font-size="18">AI Agent Infrastructure &amp; Backend Development</text>
-  <g transform="translate(743 7) scale(.79)" aria-label="Raven silhouette">
-    <path d="M16 198c63-8 128-6 230 1M177 197l24-13" fill="none" stroke="#52637e" stroke-width="3" stroke-linecap="round"/>
-    <path d="M120 169l-5 24-13 3m38-29 6 25 14 5m-45-4 11 4m20-5-9 6" fill="none" stroke="#a99cdd" stroke-width="3" stroke-linecap="round"/>
-    <path d="M44 183l18-31c9-17 13-37 25-51 10-13 24-20 37-22 2-15 6-27 17-34 12-8 29-8 41-1 9 5 13 14 14 24l31 13-32 4c-4 6-10 9-14 13-2 14-1 29-7 44-6 17-19 28-36 33-17 5-33 1-43-8l-31 34 4-22-24 15 8-23z" fill="#a99cdd"/>
-    <path d="M94 145c5-24 20-43 43-49-10 22-19 42-36 60m6-7 24-22" fill="none" stroke="#111c30" stroke-width="2" stroke-linecap="round" opacity=".5"/>
-    <circle cx="178" cy="64" r="2.4" fill="#111c30"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
+<title id="title">lr / radianceded — a flock of ravens</title>
+<desc id="desc">Flying raven silhouettes circle a central business card. Soochow University. AI Agent Infrastructure and Backend Development.</desc>
+<defs>
+ <radialGradient id="sky"><stop stop-color="#fafbfc"/><stop offset="1" stop-color="#dce3ec"/></radialGradient>
+ <linearGradient id="card" x2="1" y2="1"><stop stop-color="#1e2b43"/><stop offset="1" stop-color="#111b2c"/></linearGradient>
+ <path id="orbit" d="M920 215a420 151 0 1 1-840 0 420 151 0 1 1 840 0"/>
+ <path id="inner-orbit" d="M879 215a379 126 0 1 1-758 0 379 126 0 1 1 758 0"/>
+ <g id="raven" fill="currentColor">
+  <path d="M-24-5c13-6 25-6 38-1 4-10 16-14 24-6l4 8 16 5-18 3c-6 8-13 10-22 7-12 5-27 4-39-1l-21 12 6-13-13 1 11-9-8-6z"/>
+  <g class="wing upper"><path d="M-15-4C-24-15-32-34-38-57l9 8-3-15 10 13-1-17 10 16 2-14 7 18 5-12 3 21 7-8-1 19C8-17 9-7 17 0z"/></g>
+  <g class="wing lower"><path d="M-15 6C-26 19-34 36-38 57l10-8-4 16 11-13-1 16 10-16 2 14 7-18 5 12 3-20 7 7-1-19C8 19 10 10 18 4z"/></g>
+ </g>
+ <g id="banking" fill="currentColor">
+  <path d="M-25-3c14-5 26-5 37-1 6-12 17-15 25-7l4 7 18 5-20 3c-8 10-16 11-26 7l-22 1-27 16 8-17-17 3 13-13-10-8z"/>
+  <path d="M-12-3c-11-17-13-36-8-62l5 13 3-19 5 18 6-17 3 20 8-13-1 23 11-8-5 20 12-3-10 15-6 18z"/>
+  <path d="M-10 6C-26 21-43 27-64 29l8 6-17 2 16 6-13 6 21 1-8 8 23-5-4 10 21-12 1 10C1 46 9 27 17 9z"/>
+ </g>
+ <style>
+ .wing { transform-box: fill-box; transform-origin: center; animation: beat 1.8s ease-in-out infinite alternate; }
+ .lower { animation-delay: -.4s; } .slow .wing { animation-duration: 2.4s; }
+ @keyframes beat { from { transform: scaleY(.72); } to { transform: scaleY(1); } }
+ .reduced { display:none; }
+ @media (prefers-reduced-motion:reduce) { .motion { display:none; } .reduced { display:inline; } .wing { animation:none; } }
+ </style>
+</defs>
+<rect width="1000" height="430" rx="18" fill="url(#sky)"/>
+<ellipse cx="500" cy="215" rx="420" ry="151" fill="none" stroke="#bbc5d5" stroke-width=".8" stroke-dasharray="2 11" opacity=".35"/>
+<text x="30" y="33" fill="#65748b" font-family="Consolas, monospace" font-size="10" letter-spacing="3">RADIANCEDED / FIELD NOTES</text>
+<text x="970" y="404" text-anchor="end" fill="#65748b" font-family="Consolas, monospace" font-size="10" letter-spacing="2">AGENTS · MEMORY · SYSTEMS</text>
+<g class="motion" color="#62718a" opacity="0.5">
+<g><animateMotion dur="31s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#inner-orbit"/></animateMotion><g class="slow" transform="scale(0.31)"><use xlink:href="#raven"/></g></g>
+<g><animateMotion dur="31s" begin="-7.75s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#inner-orbit"/></animateMotion><g class="slow" transform="scale(0.4)"><use xlink:href="#banking"/></g></g>
+<g><animateMotion dur="31s" begin="-15.5s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#inner-orbit"/></animateMotion><g class="slow" transform="scale(0.28)"><use xlink:href="#raven"/></g></g>
+<g><animateMotion dur="31s" begin="-23.25s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#inner-orbit"/></animateMotion><g class="slow" transform="scale(0.35)"><use xlink:href="#banking"/></g></g>
+</g>
+<rect x="224" y="130" width="552" height="182" rx="12" fill="#76849c" opacity=".15"/>
+<rect x="222" y="120" width="556" height="182" rx="12" fill="url(#card)"/>
+<rect x="222.5" y="120.5" width="555" height="181" rx="11.5" fill="none" stroke="#6a7593" stroke-opacity=".5"/>
+<path d="M254 151h25" stroke="#b3a4d9" stroke-width="3" stroke-linecap="round"/>
+<text x="292" y="155" fill="#afbdd1" font-family="Consolas, monospace" font-size="10" letter-spacing="2">SOOCHOW UNIVERSITY / SOFTWARE ENGINEERING</text>
+<text x="254" y="218" fill="#f5f6fa" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="600" letter-spacing="-1">lr / radianceded</text>
+<text x="256" y="252" fill="#c0cadd" font-family="Segoe UI, Arial, sans-serif" font-size="16">AI Agent Infrastructure &amp; Backend Development</text>
+<text x="256" y="281" fill="#9aabc3" font-family="Consolas, monospace" font-size="11">ranliang939@gmail.com</text>
+<circle cx="743" cy="151" r="3" fill="#b3a4d9"/>
+<g class="motion" color="#162133" opacity="1">
+<g><animateMotion dur="24s" begin="0s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.54)"><use xlink:href="#raven"/></g></g>
+<g><animateMotion dur="24s" begin="-3s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.39)"><use xlink:href="#banking"/></g></g>
+<g><animateMotion dur="24s" begin="-6s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.65)"><use xlink:href="#raven"/></g></g>
+<g><animateMotion dur="24s" begin="-9s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.36)"><use xlink:href="#banking"/></g></g>
+<g><animateMotion dur="24s" begin="-12s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.57)"><use xlink:href="#raven"/></g></g>
+<g><animateMotion dur="24s" begin="-15s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.43)"><use xlink:href="#banking"/></g></g>
+<g><animateMotion dur="24s" begin="-18s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.68)"><use xlink:href="#raven"/></g></g>
+<g><animateMotion dur="24s" begin="-21s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbit"/></animateMotion><g class="slow" transform="scale(0.4)"><use xlink:href="#banking"/></g></g>
+</g>
+<g class="reduced" color="#162133">
+<use xlink:href="#raven" transform="translate(920.00 215.00) rotate(90.00) scale(0.54)"/>
+<use xlink:href="#banking" transform="translate(796.98 321.77) rotate(160.23) scale(0.39)"/>
+<use xlink:href="#raven" transform="translate(500.00 366.00) rotate(180.00) scale(0.65)"/>
+<use xlink:href="#banking" transform="translate(203.02 321.77) rotate(-160.23) scale(0.36)"/>
+<use xlink:href="#raven" transform="translate(80.00 215.00) rotate(-90.00) scale(0.57)"/>
+<use xlink:href="#banking" transform="translate(203.02 108.23) rotate(-19.77) scale(0.43)"/>
+<use xlink:href="#raven" transform="translate(500.00 64.00) rotate(-0.00) scale(0.68)"/>
+<use xlink:href="#banking" transform="translate(796.98 108.23) rotate(19.77) scale(0.4)"/>
+</g>
 </svg>
