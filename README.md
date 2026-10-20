@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="lr / radianceded — AI Agent Infrastructure &amp; Backend Development" />
+  <img src="assets/header-static-flock-v2.png" width="100%" alt="lr / radianceded — 静态群鸦剪影名片" />
 </p>
 
 <h1 align="center">Hi, I'm lr / radianceded</h1>
@@ -15,10 +15,6 @@
   <a href="https://github.com/radianceded?tab=repositories">Repositories</a>
   &nbsp; · &nbsp;
   Soochow University · Class of 2028
-</p>
-
-<p align="center">
-  <img src="assets/typing.svg" width="620" alt="Building with agents. Learning backend systems." />
 </p>
 
 ## Selected Projects
