@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header-static-flock-v2.png" width="100%" alt="lr / radianceded — 静态群鸦剪影名片" />
+  <img src="assets/header-static-ravens-v3.png" width="100%" alt="lr / radianceded — 静态群鸦剪影名片" />
 </p>
 
 <h1 align="center">Hi, I'm lr / radianceded</h1>
