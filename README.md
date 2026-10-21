@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header-ink-ravens-v4.png" width="100%" alt="lr / radianceded — 留白与群鸦，静态水墨名片" />
+  <img src="assets/header-cyber-arcade-v5.png" width="100%" alt="lr / radianceded — 赛博电玩像素风静态名片" />
 </p>
 
 <h1 align="center">Hi, I'm lr / radianceded</h1>
