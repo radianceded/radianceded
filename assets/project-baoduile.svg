@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180" role="img" aria-labelledby="title desc">
+<title id="title">Baoduile</title><desc id="desc">Evidence-grounded insurance agents. INTERNSHIP / PRIVATE.</desc>
+<defs><pattern id="dither" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 0h3v3H0zM6 6h3v3H6z" fill="#92a09c" opacity=".17"/></pattern></defs>
+<rect width="1000" height="180" fill="#e3e7e2"/>
+<path d="M0 0h1000v1H0zM0 179h1000v1H0z" fill="#b0bbb3"/>
+<rect width="254" height="180" fill="#333e3e"/>
+<rect width="254" height="180" fill="url(#dither)"/>
+<path d="M12 20v-8h16M226 12h16v8M12 160v8h16M226 168h16v-8" fill="none" stroke="#99aba5" stroke-width="2"/>
+
+<g shape-rendering="crispEdges">
+ <path d="M61 33h79l22 22v87H61z" fill="#adbbb0"/>
+ <path d="M140 33v22h22" fill="#78908a"/>
+ <path d="M76 61h47v5H76zM76 76h67v4H76zM76 88h52v4H76zM76 100h33v4H76zM76 112h44v4H76z" fill="#52655e"/>
+ <path d="M145 82h30v6h17v35h-6v12h-10v10h-16v-5h-9v-11h-9V88h3z" fill="#344641" stroke="#c7d1bd" stroke-width="3"/>
+ <path d="M153 110h6v6h6v-6h6v-6h6v-6h6v8h-6v6h-6v6h-6v6h-6v-6h-6z" fill="#c7d1bd"/>
+ <path d="M26 149h200v3H26zM31 135h17v14H31zM207 128h12v21h-12z" fill="#71877a"/>
+</g>
+<text x="282" y="33" font-family="Consolas, monospace" font-size="11" letter-spacing="2" fill="#586b63">02 / INTERNSHIP / PRIVATE</text>
+<text x="280" y="83" font-family="Consolas, monospace" font-size="39" font-weight="700" letter-spacing="-1" fill="#293434">Baoduile</text>
+<text x="282" y="113" font-family="Consolas, monospace" font-size="15" fill="#52615c">Evidence-grounded insurance agents</text>
+<path d="M282 135h24" stroke="#768b80" stroke-width="2"/>
+<text x="319" y="140" font-family="Consolas, monospace" font-size="11" letter-spacing="1" fill="#52615c">EXTRACTION / VALIDATION / SOURCE EVIDENCE</text>
+</svg>
