@@ -26,13 +26,9 @@
 
 ## Selected Work
 
-<sub>01—03 / AGENT INFRASTRUCTURE · APPLIED AI · PRODUCT ENGINEERING</sub>
+### 01 · [Semantix](https://github.com/Gnosil/semantix)
 
-<br />
-
-<a href="https://github.com/Gnosil/semantix">
-  <img src="assets/project-semantix.svg" width="100%" alt="01 · Semantix — AI Agent 跨会话记忆与语义缓存，开源协作" />
-</a>
+**AI Agent 跨会话记忆与语义缓存** · 开源协作
 
 让 Agent 复用跨会话的知识与工作流，减少重复探索和上下文开销。
 
@@ -43,7 +39,9 @@
 
 <br />
 
-<img src="assets/project-baoduile.svg" width="100%" alt="02 · 保对了 Baoduile — 保险垂类 Agent，实习项目，私有仓库" />
+### 02 · 保对了 / Baoduile
+
+**保险垂类 Agent 应用** · 实习项目 · 私有仓库
 
 面向保险业务中的信息提取与结构化处理，提升模型输出的可用性。
 
@@ -53,11 +51,10 @@
 <sub>PRIVATE REPOSITORY / 仅展示项目概要</sub>
 
 <br />
-<br />
 
-<a href="https://github.com/radianceded/Gathere">
-  <img src="assets/project-gathere.svg" width="100%" alt="03 · Gathere — 公平聚会选址，个人项目" />
-</a>
+### 03 · [Gathere](https://github.com/radianceded/Gathere)
+
+**公平聚会选址工具** · 个人项目
 
 结合参与者位置与出行方式，检索候选地点并比较通勤成本，让多人聚会选址更公平。
 
