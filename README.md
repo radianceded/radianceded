@@ -71,31 +71,27 @@
 
 <sub>CONTRIBUTIONS / 代码、实验与产品改进</sub>
 
-
 ### 已合并 / Merged
 
 | Project | Contribution | PR |
 | :--- | :--- | :--- |
-| [Gnosil/semantix](https://github.com/Gnosil/semantix) | 模型嵌入接入、CLI 配置命令、上下文复用实验及桌面端迭代 | [#106](https://github.com/Gnosil/semantix/pull/106) · [#137](https://github.com/Gnosil/semantix/pull/137) · [#513](https://github.com/Gnosil/semantix/pull/513) · [#487](https://github.com/Gnosil/semantix/pull/487) |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 为 `~/.agents/skills` 同步增加按技能选择开关 | [#20356](https://github.com/CherryHQ/cherry-studio/pull/20356) |
 | [prometheus/client_golang](https://github.com/prometheus/client_golang) | 微基准迁移到 `b.Loop`，统一基准用例命名 | [#2114](https://github.com/prometheus/client_golang/pull/2114) |
 | [zzet/gortex](https://github.com/zzet/gortex) | 修正模型价格配置及费用计算 | [#786](https://github.com/zzet/gortex/pull/786) |
-| [ensureok-startup-collector](https://github.com/Allenli1233/ensureok-startup-collector) | AI 风险报告、热力图及详情页体验 | [#19](https://github.com/Allenli1233/ensureok-startup-collector/pull/19) · [#18](https://github.com/Allenli1233/ensureok-startup-collector/pull/18) |
-| [Gnosil/bazi-anima](https://github.com/Gnosil/bazi-anima) | 增加角色精灵资源 | [#5](https://github.com/Gnosil/bazi-anima/pull/5) |
 
 <details>
-<summary><strong>进行中 / Open PRs</strong> — 展开查看 Cherry Studio、OpenViking、AgentScope、GoFr 与 DeepSeek-Reasonix</summary>
+<summary><strong>进行中 / Open PRs</strong> — 展开查看 golang-migrate、OpenViking、AgentScope 与 GoFr</summary>
 
 | Project | Proposed contribution | PR |
 | :--- | :--- | :--- |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 为 `~/.agents/skills` 同步增加按技能选择开关 | [#20356](https://github.com/CherryHQ/cherry-studio/pull/20356) |
+| [golang-migrate/migrate](https://github.com/golang-migrate/migrate) | 增加 `-database-env` 选项，从指定环境变量读取数据库连接 URL，减少命令行参数中的凭据暴露 | [#1461](https://github.com/golang-migrate/migrate/pull/1461) |
 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 修复删除后的摘要刷新，以及 Windows 辅助文件 URI 路径处理 | [#6201](https://github.com/volcengine/OpenViking/pull/6201) · [#5531](https://github.com/volcengine/OpenViking/pull/5531) |
-| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | 增加 RealtimeAgent 上下文用量观测层 | [#2838](https://github.com/agentscope-ai/agentscope/pull/2838) |
+| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | 为 RealtimeAgent 增加上下文用量观测、后台压缩检查点、工具结果限长与重连恢复 | [#2838](https://github.com/agentscope-ai/agentscope/pull/2838) |
 | [gofr-dev/gofr](https://github.com/gofr-dev/gofr) | 在 gRPC 指标标签中记录状态码 | [#4349](https://github.com/gofr-dev/gofr/pull/4349) |
-| [Gnosil/DeepSeek-Reasonix](https://github.com/Gnosil/DeepSeek-Reasonix) | 增加 Semantix Design 主题 | [#4](https://github.com/Gnosil/DeepSeek-Reasonix/pull/4) |
 
 </details>
 
-状态核对：2026-10-20。以上为精选记录；[完整公开 PR 清单](docs/open-source.md) 包含个人项目、课程资料，以及已关闭未合并的提案。
+状态与 Stars 核对于 2026-11-05。此处仅展示 Stars ≥ 1,000 的公开仓库贡献；[PR 详情清单](docs/open-source.md) 按同一门槛筛选，并区分已合并、进行中与已关闭未合并的记录。
 
 <br />
 
