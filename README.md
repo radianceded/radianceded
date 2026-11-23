@@ -1,16 +1,14 @@
 <p align="center">
-  <a href="https://radianced.cn/profile">
-    <img src="assets/header-blueprint-v7.svg" width="100%" alt="Radiance / 梁然 — AI Agent Infrastructure & High-Concurrency Go Backend" />
-  </a>
+  <img src="assets/header-sage-pixel-v6.png" width="100%" alt="lr / radianceded — 灰绿像素旧城与乌鸦，静态名片" />
 </p>
 
 <p align="center">
-  苏州大学软件工程本科（2028 届），专注于 <strong>AI Agent 跨会话记忆基础设施</strong> 与 <strong>高并发分布式实时后端</strong>。<br />
-  围绕上下文切片压缩、BM25+向量混合检索、结果复用依赖指纹验证，以及万级 WebSocket 长连接治理、Kafka 分区合批与容灾一致性构建可验证的工程系统。
+  苏州大学软件工程本科生，关注 AI Agent 基础设施与后端开发。<br />
+  参与过语义缓存、保险 Agent 和真实业务系统的开发与交付。
 </p>
 
 <p align="center">
-  <a href="https://radianced.cn/profile"><strong>Personal Webpage (radianced.cn/profile) ↗</strong></a>
+  <a href="https://radianced.cn/profile">Personal Webpage</a>
   &nbsp; · &nbsp;
   <a href="mailto:ranliang939@gmail.com">ranliang939@gmail.com</a>
   &nbsp; · &nbsp;
@@ -21,8 +19,8 @@
 
 <p align="center">
   <a href="#selected-work">Selected Work</a> &nbsp; / &nbsp;
-  <a href="#experience">Experience</a> &nbsp; / &nbsp;
   <a href="#open-source">Open Source</a> &nbsp; / &nbsp;
+  <a href="#in-progress">In Progress</a> &nbsp; / &nbsp;
   <a href="#toolkit">Toolkit</a>
 </p>
 
@@ -32,37 +30,40 @@
 
 ### 01 · [Semantix](https://github.com/Gnosil/semantix)
 
-**AI Agent 跨会话记忆基础设施** · GitHub 800+ ★ · Top 1 Committer（96+ 已合并 PR）
+**AI Agent 跨会话记忆与语义缓存** · 开源协作
 
-- **记忆切片压缩与精简注入**：针对原方案直接注入 2–3KB 切片原文导致模型输出膨胀的问题，每条切片仅保留一句话动作、相对路径与验证命令，丢弃任务描述类切片并合并同文件重复项，总长压缩至 `≤1.8KB`，检索未命中时无损回退原提示词。在同批 12 题对照测试中，输出 Token 降低 **22.9%**，折算成本降低 **34.8%**。
-- **BM25 + 向量双路融合检索与降级**：将 BM25 与稠密向量双路融合接入主动查询入口，支持按配置开启并在 Embedding 不可用时自动降级至 BM25。在 LoCoMo **5,882 个切片、1,977 道问题**对照测试中，Hit@10 从 **58.9% 提升至 70.0%**。
-- **结果复用验证与文件依赖指纹校验**：实现「来源 → 模型 → 上下文 → 文件依赖」四级逐级校验，结合修改时间快速筛查与内容指纹验证，不满足条件时回退正常执行；在 **200 个任务**模拟评测中 **100% 拦截**全部依赖变更样例，有效结果复用率达 **85%**，命中任务耗时 P50 从 **12.0s 降至 0.8s**。
+让 Agent 复用跨会话的知识与工作流，减少重复探索和上下文开销。
+
+**我的参与** · 上下文复用策略开发与实验验证。  
+**关注的问题** · 记忆复用的适用边界、执行开销与结果质量。
 
 [浏览源码 →](https://github.com/Gnosil/semantix) &nbsp; · &nbsp; [查看我的提交 →](https://github.com/Gnosil/semantix/commits/main/?author=radianceded)
 
 <br />
 
-### 02 · [GoliTube](https://github.com/radianceded/GoliTube)
+### 02 · Baoduile
 
-**Go 高性能直播弹幕后端系统** · `Gin` · `WebSocket` · `Kafka` · `Redis` · `MySQL`
+**保险垂类 Agent 应用** · 实习项目 · 私有仓库
 
-- **高并发吞吐与尾延迟优化**：保持同步确认不变，实现 Kafka Producer 按分区合批、消费端 3 分区并行批量写库及房间级下行合包（50 条 / 20ms）。同机压测下千人热点单房间投递从 **4.1 万/秒升至 15.5 万/秒**（P99 **57.8s → 114ms**、0 缺失）；**2,000 TPS** 多房间 P99 从 **34.7s 降至 138ms**（0 积压），单机稳定维持 **15,000** 长连接。
-- **并发连接治理与跨实例广播**：为每条连接设计 **256 条有界发送队列与单写协程**，广播非阻塞入队，队列满时淘汰慢客户端；结合 Ping/Pong 心跳与超时回收，通过 Redis Pub/Sub 支持多实例广播与房间隔离。
-- **双层限流、可靠消费与版本化缓存**：实现连接级令牌桶（2 条/秒、突发 5 条）+ Redis 用户级窗口（跨实例 10 条/5 秒）双层限流；事件 ID 幂等与死信转存（DB 停服恢复后 **0 重复自动补存**）；事务提交后切换房间缓存版本并配置 `150ms` 缓存预算，隔离并发旧查询回填。
+面向保险业务中的信息提取与结构化处理，提升模型输出的可用性。
 
-[浏览源码与压测报告 →](https://github.com/radianceded/GoliTube) &nbsp; · &nbsp; [在线演示 (radianced.cn) →](https://radianced.cn/)
+**我的参与** · LLM 结构化输出校验与基于原文证据的保额纠错。  
+**关注的问题** · 数字漏位、单位归一化、主／子限额混淆，以及证据冲突时的保守处理。
+
+<sub>PRIVATE REPOSITORY / 仅展示项目概要</sub>
 
 <br />
 
----
+### 03 · [Gathere](https://github.com/radianceded/Gathere)
 
-## Experience
+**公平聚会选址工具** · 个人项目
 
-**上海确石人工智能有限公司（百度孵化）** · Agent 与后端开发实习生（2026.06 – 2026.09）
+结合参与者位置与出行方式，检索候选地点并比较通勤成本，让多人聚会选址更公平。
 
-- **VLM + OCR 协同保险材料解析**：由 VLM 判断版式与朝向，结合 OCR 文本、坐标和原图联合抽取字段，经 Schema 与证据绑定校验，字段抽取准确率从 **83.3% 上升至 89.7%**（每页耗时 P50 `14.8s`）。
-- **检索性能优化**：为 Embedding 添加进程内 `LRU + TTL` 缓存并隔离失败结果（连续 10 次相同查询实际调用降至 1 次）；在 5,000 条向量、K=10 测试下，TopK 比较次数由约 **5.5 万次降至 5,300 次**。
-- **三级记忆召回降级**：设计「向量检索 → LIKE 全文检索 → 最近记录」三级降级并对齐跨模型向量维度，Embedding 全量故障注入下主对话成功率 **100%**，记忆召回非空率 **93%**。
+**核心能力** · 地图检索、路线规划，以及综合通勤时间与公平性差值的排序。  
+**接入方式** · FastAPI、MCP Server 与聊天插件。
+
+[浏览源码与文档 →](https://github.com/radianceded/Gathere)
 
 <br />
 
@@ -76,8 +77,8 @@
 
 | Project | Contribution | PR |
 | :--- | :--- | :--- |
-| [prometheus/client_golang](https://github.com/prometheus/client_golang) | 微基准迁移到 `b.Loop`，统一基准用例命名 | [#2114](https://github.com/prometheus/client_golang/pull/2114) |
 | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 为 `~/.agents/skills` 同步增加按技能选择开关 | [#20356](https://github.com/CherryHQ/cherry-studio/pull/20356) |
+| [prometheus/client_golang](https://github.com/prometheus/client_golang) | 微基准迁移到 `b.Loop`，统一基准用例命名 | [#2114](https://github.com/prometheus/client_golang/pull/2114) |
 | [zzet/gortex](https://github.com/zzet/gortex) | 修正模型价格配置及费用计算 | [#786](https://github.com/zzet/gortex/pull/786) |
 
 <details>
@@ -92,23 +93,40 @@
 
 </details>
 
-[PR 详情清单 →](docs/open-source.md)
+状态与 Stars 核对于 2026-11-05。此处仅展示 Stars ≥ 1,000 的公开仓库贡献；[PR 详情清单](docs/open-source.md) 按同一门槛筛选，并区分已合并、进行中与已关闭未合并的记录。
 
 <br />
 
 ---
 
-## Toolkit & Honors
+## In Progress
 
-- **竞赛奖项**：众安 AI Coding 大赛初赛 **冠军** · 松江区星火计划 OPC 创业挑战赛 **冠军** · 常熟 OPC 人工智能黑客松挑战赛 **亚军**
+<sub>WORKBENCH / 从基础开始构建</sub>
+
+### Go 直播弹幕后端
+
+> **学习与开发中**  
+> 从零手写，逐步实现长连接管理、多房间广播与异步持久化，记录设计取舍和性能验证。
+
+`Go` · `WebSocket` · `Redis` · `Kafka` · `MySQL`
+
+业务参考：[live-stream-danmaku](https://github.com/charlesAcmen/live-stream-danmaku)。以上为阶段目标，不代表已完成的功能或性能成果。
+
+<br />
+
+---
+
+## Toolkit
+
+<sub>LANGUAGES / TOOLS / MIDDLEWARE</sub>
 
 <p>
-  <img src="https://img.shields.io/badge/Go-1646D8?style=flat-square&amp;logo=go&amp;logoColor=FFFFFF" alt="Go" />
-  <img src="https://img.shields.io/badge/Python-1646D8?style=flat-square&amp;logo=python&amp;logoColor=FFFFFF" alt="Python" />
-  <img src="https://img.shields.io/badge/Kafka-0A0C10?style=flat-square&amp;logo=apachekafka&amp;logoColor=FFFFFF" alt="Kafka" />
-  <img src="https://img.shields.io/badge/Redis-0A0C10?style=flat-square&amp;logo=redis&amp;logoColor=FFFFFF" alt="Redis" />
-  <img src="https://img.shields.io/badge/MySQL-0A0C10?style=flat-square&amp;logo=mysql&amp;logoColor=FFFFFF" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Docker-0A0C10?style=flat-square&amp;logo=docker&amp;logoColor=FFFFFF" alt="Docker" />
+  <img src="https://img.shields.io/badge/Go-43554F?style=flat-square&amp;logo=go&amp;logoColor=E3E7E2" alt="Go" />
+  <img src="https://img.shields.io/badge/Python-43554F?style=flat-square&amp;logo=python&amp;logoColor=E3E7E2" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-43554F?style=flat-square&amp;logo=typescript&amp;logoColor=E3E7E2" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Git-43554F?style=flat-square&amp;logo=git&amp;logoColor=E3E7E2" alt="Git" />
+  <img src="https://img.shields.io/badge/Redis-43554F?style=flat-square&amp;logo=redis&amp;logoColor=E3E7E2" alt="Redis" />
+  <img src="https://img.shields.io/badge/Kafka-43554F?style=flat-square&amp;logo=apachekafka&amp;logoColor=E3E7E2" alt="Kafka" />
 </p>
 
 <br />
